@@ -28,7 +28,7 @@ Substitute ios for android if not on a Mac.
 
 
 # 安装并启动
- 首先在电脑上安装好ionic3,Android SDk,xcode等需要的环境
+ 首先在电脑上安装好ionic3,Android SDk,xcode等需要的环境<br />
  用 git clone 的方式拉项目到本地
  先到package.json中删掉jpush-phonegap-plugin(注意dependencies和cordova中都删掉)
 jpush-phonegap-plugin 需要先删掉，等安装完其他依赖之后再单独安装，因为这里的消息推送插件需要配置自己的appkey
