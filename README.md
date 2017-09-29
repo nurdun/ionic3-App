@@ -45,6 +45,10 @@ ionic cordova platform add ios<br />
 ionic cordova emulate ios -lc<br />
 ionic cordova run ios -lc<br />
 
-#注意
+# 注意
 config.xml中的widget id="ionic.App" 需要替换成自己的App id
+
+# 建议
+安装npm package时可能会报错 <br />
+建议自己ionic start xxx新建一个ionic3项目然后把代码复制进去运行
 
