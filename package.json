@@ -51,7 +51,10 @@
     "cordova": {
         "plugins": {
             "jpush-phonegap-plugin": {
-                "APP_KEY": "61ce12d0fda93def1c9ec476"
+              //这个插件需要重新安装
+              //插件url地址为https://github.com/lh4111/ionic-jpush
+              //安装的时候注意配置appkey
+                "APP_KEY": ""
             },
             "phonegap-plugin-push": {},
             "cordova-plugin-device": {},
