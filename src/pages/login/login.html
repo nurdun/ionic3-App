@@ -1,0 +1,29 @@
+
+
+<ion-content padding>
+  <form #login="ngForm">
+    <ion-list>
+    
+      <ion-item>
+        <ion-input type="text" name="userName" placeholder="Username" #userName></ion-input>
+      </ion-item>
+        
+      <!-- <p ion-text [hidden]="isShow == false" color="danger" padding-left>
+                请输入6到32位的由英文字符或数字组成的用户名！
+      </p> -->
+
+      <ion-item>
+        <ion-input type="password" name="passWord" placeholder="Password" #passWord></ion-input>
+      </ion-item>
+
+      <p ion-text [hidden]="isShow == false" color="danger" padding-left>
+          用户名或密码错误，请重新输入！
+      </p>
+      
+      <ion-item>
+        <button ion-button (click)="onlogin(userName,passWord)" type="submit" block>login</button>
+      </ion-item>
+
+    </ion-list>
+  </form>
+</ion-content>

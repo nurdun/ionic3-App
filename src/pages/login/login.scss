@@ -1,0 +1,38 @@
+page-login {
+    form{
+        text-align:center;
+        margin: auto;
+        margin-top: 130px;
+    }
+    .has-focus{
+        border-bottom: none；
+    }
+    .item{
+        margin-top: 20px;
+        border:1px solid #cccccc;
+        border-radius: 5px;
+    }
+    .item:last-child{
+        margin-top: 20px;
+        border:0 !important;
+    }
+    div .input-wrapper{
+        // margin: 20px auto;
+        text-align:center;
+    }
+    .item-ios.item-block .item-inner{
+        border: 0;
+    }
+    .input-cover {
+        position: static;
+    }
+    button{
+        width: 200px;
+        height: 40px !important; 
+    }
+
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner{
+        border-bottom: 0 !important;
+    }
+}

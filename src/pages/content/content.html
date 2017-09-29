@@ -1,0 +1,70 @@
+<!-- <ion-menu [content]="menuContent"> -->
+  <ion-header>
+    <ion-navbar>
+      <button class="left-menu" ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title >Home</ion-title>
+      <button class="search-menu"  end>
+          <ion-icon name="search" (click)="toSearch()" ></ion-icon>
+    </button>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+      <!-- <button ion-button menuToggle>Toggle Menu</button>
+      <button ion-button menuToggle>Toggle Menu</button>
+      <button ion-button menuToggle>Toggle Menu</button> -->
+      <ion-toolbar no-border-top>
+          <ion-segment [(ngModel)]="cars">
+              <ion-segment-button value="carA">
+                  carA
+              </ion-segment-button>
+              
+              <ion-segment-button value="carB">
+                  carB
+              </ion-segment-button>
+              
+              <ion-segment-button value="carC">
+                  carC
+              </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
+
+        <div [ngSwitch]="cars">
+          <ion-list *ngSwitchCase="'carA'">
+            <ion-item (click)="toDetail()">
+              <ion-thumbnail item-start>
+                <img src="assets/img/thumbnail-puppy-1.jpg">
+              </ion-thumbnail>
+              <h2>A种车</h2>
+              <p>这是车俩概述</p>
+            </ion-item>
+          </ion-list>
+      
+          <ion-list *ngSwitchCase="'carB'">
+            <ion-item (click)="toDetail()">
+              <ion-thumbnail item-start>
+                <img src="assets/img/thumbnail-kitten-1.jpg">
+              </ion-thumbnail>
+              <h2>B种车</h2>
+              <p>这是车俩概述</p>
+            </ion-item>
+          </ion-list>
+      
+          <ion-list *ngSwitchCase="'carC'">
+            <ion-item (click)="toDetail()">
+              <ion-thumbnail item-start>
+                <img src="assets/img/thumbnail-duckling-1.jpg">
+              </ion-thumbnail>
+              <h2>C种车</h2>
+              <p>这是车俩概述</p>
+            </ion-item>
+        </ion-list>
+    </div>
+
+      <!-- <ion-nav #mycontent [root]="rootPage"></ion-nav> -->
+  </ion-content>
+<!-- </ion-menu> -->
+
+<!-- <ion-nav [root]="rootPage" #menuContent swipeBackEnabled="false"></ion-nav> -->

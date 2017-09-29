@@ -1,0 +1,30 @@
+page-search {
+    .search-box{
+         display: flex;
+         align-items:flex-start;
+         width:100%;
+         height:70px;
+         line-height: 100px;
+         //background:rgba(0, 0, 0, 0.2)
+     }
+     .searchbar-md{
+         background:rgba(0, 0, 0, 0.2);
+     }
+     .searchbar-input-container{
+         width: 75%;
+         background:rgba(0, 0, 0, 0.0);
+     }
+     .back-btn{
+         position: absolute;
+         top:20px;
+         right: 0;
+         width:100px;
+         background:rgba(0, 0, 0, 0.0);
+         font-size: 16px;
+         color: #488aff;
+     }
+     input{
+         color: #cccccc;
+     }
+ }
+ 
