@@ -48,7 +48,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-
+      
+      //根据不同平台实现消息推送功能
       if(this.platform.is('ios')){
         this.initPushNotification();
       }else if(this.platform.is('android')){
@@ -89,6 +90,7 @@ export class MyApp {
     });
   }
 
+  //Android端获取RegestrationId，用于消息推送
   androidGetRegId(){
     this.jPush.getRegistrationID()
     .then(regId => {
