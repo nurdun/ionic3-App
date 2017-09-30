@@ -38,8 +38,9 @@ jpush-phonegap-plugin 需要先删掉，等安装完其他依赖之后再单独�
 # Android
 ios的消息推送功能用到了phonegap-plugin-push插件，本插件在安卓上需要使用google services通过firebase来推送消息。<br />
 因为我们用不了google services，所以Android端用了极光的jpush-phonegap-plugin来实现了消息推送。<br />
-要打包成Android项目时需要用 ionic cordova plugin remove phonegap-plugin-push 命令来删除phonegap-plugin-push插件<br />
+要打包成Android时需要用 ionic cordova plugin remove phonegap-plugin-push命令来删除phonegap-plugin-push插件<br />
 否则的话因为获取不到google services配置文件，打包会失败。这个问题之后会解决<br />
+
 ionic cordova platform add android 打包安卓项目<br />
 ionic cordova emulate android  -lc 启动安卓模拟器并查看项目<br />
 ionic cordova run android -lc  真机调试<br />
