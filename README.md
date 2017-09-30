@@ -56,13 +56,13 @@ config.xml中的widget id="ionic.App" 需要替换成自己的App id
 # 建议
 安装npm package时可能会报错 <br />
 建议自己ionic start xxx新建一个ionic3项目然后把代码复制进去运行<br />
-创建新项目并复制我的代码的时候需要单独安装几个插件和npm包
-$ ionic cordova plugin add phonegap-plugin-push
-$ npm install --save @ionic-native/push
-ionic plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey
-$ npm install --save ionic3-jpush
-上面四个是消息推送相关的插件和包，如果不需要消息推送功能的话可以不安装，记得注释掉app.component.ts中的相关代码就好
-$ npm install --save cordova-sqlite-storage
+创建新项目并复制我的代码的时候需要单独安装几个插件和npm包<br />
+$ ionic cordova plugin add phonegap-plugin-push<br />
+$ npm install --save @ionic-native/push<br />
+ionic plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey<br />
+$ npm install --save ionic3-jpush<br />
+上面四个是消息推送相关的插件和包，如果不需要消息推送功能的话可以不安装，记得注释掉app.component.ts中的相关代码就好<br />
+$ npm install --save cordova-sqlite-storage<br />
 
 
 
